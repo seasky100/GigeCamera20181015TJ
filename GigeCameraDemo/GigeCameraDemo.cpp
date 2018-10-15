@@ -1,4 +1,4 @@
-// GigeCameraDemo.cpp : Defines the class behaviors for the application.
+﻿// GigeCameraDemo.cpp : Defines the class behaviors for the application.
 //
 
 #include "stdafx.h"
@@ -47,7 +47,7 @@ BOOL CGigeCameraDemoApp::InitInstance()
 	//return FALSE;
 	//}
 
-	////��������Ѿ����ڲ�����������
+	////如果程序已经存在并且正在运行
 	//if (GetLastError() == ERROR_ALREADY_EXISTS)
 	//{
 
@@ -61,15 +61,15 @@ BOOL CGigeCameraDemoApp::InitInstance()
 	//GetWindowPlacement(hProgramWnd,&wpm);
 	//if (pWndpl)
 	//{
-	////�����еĳ��򴰿ڻ�ԭ������״̬
+	////将运行的程序窗口还原成正常状态
 	//pWndpl->showCmd = SW_SHOWNORMAL;
 	//::SetWindowPlacement(hProgramWnd,pWndpl);
 	//SetWindowPos(hProgramWnd,HWND_NOTOPMOST,0,0,0,0,SWP_NOSIZE|SWP_NOMOVE);
-	//FlashWindow(hProgramWnd,TRUE);//������ͼ����˸
+	//FlashWindow(hProgramWnd,TRUE);//任务栏图标闪烁
 	//}
 
 	//}
-	////�رս��̻�����
+	////关闭进程互斥体
 
 	//CloseHandle(m_hMutex);
 	//m_hMutex = NULL;
